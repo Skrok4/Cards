@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body{
+    height: 100%;
+    background-color: rgb(17, 18, 78);
+    padding-top: 20px;
+}
+*{
+	padding: 0;
+	margin: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+   
+    /* margin: 50px auto 0 auto;  */
+    font-size: 24px;
+    font-weight: 700;
+}
+.block{
+    width: 250px;
+    margin: 10px 50px;
+    text-align: center;
+
+}
+.sumScoreComputer, .sumScoreUser{
+    background-color: #7b68ee;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 32px;
+}
+.score{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score img{
+    border-radius: 25px;
+    box-shadow: 0 0 25px red;
+    border: black 2px solid;
+    width: 300px;
+    height: 420px;
+}
+.start{
+    align-self: center;
+    text-align: center;
+}
+.generate{
+    margin: 20px 40px 0 40px;
+    background-color: #02bb02;
+    padding: 30px 40px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@keyframes flip {
+	0% { transform:  rotate(0deg); }
+	100% {transform: rotateX(360deg) }
+  }
+  .Anim{
+	animation: flip 0.6s ease;
+	animation-iteration-count: 1;
+  }
+
+  /* Modal */
+  
+.popup-fade {
+	display: none;
+}
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+}
+.popup {
+	position: fixed;
+	top: 20%;
+	left: 40%;
+	padding: 20px;
+	width: 360px;
+	margin-left: -100px;
+	background: black;
+	border: 1px solid orange;
+	border-radius: 4px;
+	z-index: 99999;
+	opacity: 1;
+}
+.popup-close {
+	position: absolute;
+    margin-left: 30px;
+	top: 10px;
+	right: 10px;
+}
